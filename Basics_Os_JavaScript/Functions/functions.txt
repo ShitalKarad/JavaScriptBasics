@@ -1,0 +1,1 @@
+Function is a block of code that is designed for perform a perticular task and exicute when it is called

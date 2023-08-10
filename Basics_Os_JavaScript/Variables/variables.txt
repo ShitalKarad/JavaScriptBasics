@@ -1,0 +1,14 @@
+variables are container for storing data.
+
+var = whenever we decleare variable as var it can reclare & reasign also.
+let = we dint redeclare but reasignment is possible.
+const = is a block scope variable we cant change the value of const variable if once declare.
+
+Variables can have local or global scope. Local variables cannot be accessed out of the function
+ where they are declared, whereas the global variables can be accessed from anywhere.
+
+
+ KEYWORD           SCOPE	               REDECLARATION &  REASSIGNMENT	            HOISTING
+  var         	Global, Local	                 yes & yes	             yes, with default value
+let	           Global, Local, Block	            no & yes	        yes, without default value
+const	       Global, Local, Block	              no & no	             yes, without default value
