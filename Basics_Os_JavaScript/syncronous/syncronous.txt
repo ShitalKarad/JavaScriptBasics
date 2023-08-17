@@ -1,0 +1,1 @@
+syncronous is bloking architecture so the execution of each operation is dependent of the compilation of the one before it
