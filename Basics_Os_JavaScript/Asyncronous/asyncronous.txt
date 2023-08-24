@@ -1,0 +1,13 @@
+Asyncronous is a non-bloking architecture so the execution of one task isn't dependent on another .
+Task can run symultaneouly.
+
+
+difference between async and sync 
+
+                   async                                                                 sync
+
+ 1) async is multithreaded  wich means operations or programs        1) synchronous is single-thread, so only one operation or program 
+           can run in parallel.                                                         will run at a time.
+ 2) async is non-blocking which meand it will send multiple          2) Sync is blocking — it will only send the server one request at a time 
+               request on server at a time.                                  and will wait for that request to be answered by the server.
+  3)
