@@ -1,0 +1,235 @@
+array length method:
+It return the length of whole array.
+ 
+// Array lastIndexOf():
+Returns the index of the last occurrence of a specified value in an array,
+ or -1 if it is not present.
+@param searchElement — The value to locate in the array.
+@param fromIndex — The array index at which to begin searching backward.
+ If fromIndex is omitted, the search starts at the last index in the array.
+
+Return Value
+Type	Description
+A number	The position of the specified item.
+-1 if the item is not found.
+
+ //join()
+  returns an array as a string . The join() method does not change the original array.
+Any separator can be specified. The default is comma (,).
+
+Return Value
+Type	Description
+A string.	The array values, separated by the specified separator.
+
+
+// concat()
+The concat() method concatenates (joins) two or more arrays.
+The concat() method returns a new array, containing the joined arrays.
+The concat() method does not change the existing arrays.
+
+Return Value
+Type	Description
+Array	The content from the joined arrays.
+
+//entries() returns an Array Iterator object with key/value pairs:
+
+//fill() :
+ The fill() method fills specified elements in an array with a value.
+ The fill() method overwrites the original array.
+Start and end position can be specified. If not, all elements will be filled.
+
+Return Value
+Type	Description
+Array	The filled array.
+
+// filter()
+
+The filter() method creates a new array filled with elements that pass a test provided by a function.
+The filter() method does not execute the function for empty elements.
+The filter() method does not change the original array.
+
+Return Value
+Type	Description
+Array	An array of elements that pass the test.
+An empty array if no elements pass the test.
+
+//find()
+
+The find() method returns the value of the first element that passes a test. It executes a function for each
+ array element.It returns undefined if no elements are found.
+The find() method does not execute the function for empty elements.
+The find() method does not change the original array.
+
+return : The value of the first element that pass the test.
+Otherwise it returns undefined.
+
+// findIndex()
+
+The findIndex() method executes a function for each array element.It returns the index (position) of the first element that passes a test.
+it returns -1 if no match is found.It does not execute the function for empty array elements.
+It does not change the original array.
+
+Return Value
+Type	Description
+Number	The index of the first element that passes the test.Otherwise -1.
+
+//forEach()
+
+The forEach() method calls a function for each element in an array.
+The forEach() method is not executed for empty elements.
+
+Return Value :
+undefined
+
+//Array.from()
+Array.from()
+Array.from() is a static property of the JavaScript Array object.
+You can only use it as Array.from().
+
+Using x.from(), where x is an array will return undefined.
+The Array.from() method returns an array from any object with a length property.
+The Array.from() method returns an array from any iterable object.
+
+Return Value
+Type	Description
+An array	The values from the iterable object.
+
+//includes()
+
+The includes() method returns true if an array contains a specified value.
+The includes() method returns false if the value is not found.
+The includes() method is case sensitive.
+
+Return Value
+Type	Description
+A boolean	true if the value is found, otherwise false.
+
+//indexOf()
+
+The indexOf() method returns the first index (position) of a specified value.
+The indexOf() method returns -1 if the value is not found.
+The indexOf() method starts at a specified index and searches from left to right.
+By default the search starts at the first element and ends at the last.
+
+Return Value
+Type	Description
+A number	The index (position) of the first item found.
+-1 if the item is not found.
+
+// isArray()
+The isArray() method returns true if an object is an array, otherwise false.
+
+Return Value
+Type	Description
+A boolean	true if the object is an array, otherwise false.
+
+
+//map()
+map() creates a new array from calling a function for every array element.
+map() does not execute the function for empty elements.
+map() does not change the original array.
+
+Return Value
+Type	Description
+An array	The results of a function for each array element.
+
+//pop()
+The pop() method removes (pops) the last element of an array.
+The pop() method changes the original array.
+The pop() method returns the removed element.
+
+Return Value
+Type	Description
+A variable	The removed item.
+A string, a number, an array, or any other type allowed in an array.
+
+//push()
+
+The push() method adds new items to the end of an array.
+The push() method changes the length of the array.
+The push() method returns the new length.
+
+Return Value
+Type	Description
+A number	The new length of the array.
+
+//reverse()
+The reverse() method reverses the order of the elements in an array.
+The reverse() method overwrites the original array.
+
+Return Value
+The array after it has been reversed.
+
+//shift()
+
+it removes the first element of an array
+The shift() method changes the original array.
+The shift() method returns the shifted element.
+
+return value
+A variable	The removed item.
+A string, a number, an array, or any other type allowed in an array.
+
+//splice
+The splice() method adds and/or removes array elements.
+The splice() method overwrites the original array.
+
+Return Value
+An array containing the removed items (if any).
+
+//toString()
+The toString() method returns a string with array values separated by commas.
+The toString() method does not change the original array.
+
+Return Value
+Type	Description
+A string	The array values separated by commas.
+
+//slice
+
+The slice() method returns selected elements in an array, as a new array.
+The slice() method selects from a given start, up to a (not inclusive) given end.
+The slice() method does not change the original array.
+
+Return Value
+A new array containing the selected elements.
+
+//sort()
+
+The sort() sorts the elements of an array.
+The sort() overwrites the original array.
+The sort() sorts the elements as strings in alphabetical and ascending order.
+
+return value :
+
+The array with the items sorted.
+
+// valueOf()
+
+The valueOf() method returns the array itself.
+The valueOf() method does not change the original array.
+fruits.valueOf() returns the same as fruits.
+
+Return Value
+Type	Description
+An array	The valueOf() method returns itself!
+
+//unShift()
+
+The unshift() method adds new elements to the beginning of an array.
+The unshift() method overwrites the original array.
+
+Return Value
+Type	Description
+A number	The new length of the array.
+
+//every()
+The every() method executes a function for each array element.
+it returns true if the function returns true for all elements.
+it returns false if the function returns false for one element.
+it does not execute the function for empty elements.
+it does not change the original array
+
+Return Value
+Type	Description
+Boolean	true if all elements pass the test, otherwise false.

@@ -1,0 +1,24 @@
+Hoisting is JavaScript's default behavior of moving declarations to the top.
+In JavaScript, a variable can be declared after it has been used.
+
+In other words; a variable can be used before it has been declared.
+
+All declarations (function, var, let, const and class) are hoisted in JavaScript, 
+ while the var declarations are initialized with undefined, but let and const declarations remain uninitialized.
+
+ onsole.log(a);
+let a = 3;
+Output: ReferenceError: a is not defined
+//They will only get initialized when their lexical binding (assignment) is evaluated during runtime by the JavaScript 
+engine. This means you can’t access the variable before the engine evaluates its value at
+ the place it was declared in the source code. This is what we call “Temporal Dead Zone”, A 
+ time span between variable creation and its initialization where they can’t be accessed.
+
+If the JavaScript engine still can’t find the value of let or const variables at the line where
+     they were declared, it will assign them the value of undefined or return an error (in case of const).
+
+Let’s look at some more example:
+
+let a;
+console.log(a); // outputs undefined
+a = 5;
