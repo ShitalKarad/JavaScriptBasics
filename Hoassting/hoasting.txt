@@ -1,24 +1,43 @@
-Hoisting is JavaScript's default behavior of moving declarations to the top.
-In JavaScript, a variable can be declared after it has been used.
+Hoisting is a fundamental concept in JavaScript that affects how variables 
+and function declarations are processed during the compilation and execution phases
 
-In other words; a variable can be used before it has been declared.
+Compilation and Execution Phases:
+JavaScript code is executed in two main phases: compilation and execution.
 
-All declarations (function, var, let, const and class) are hoisted in JavaScript, 
- while the var declarations are initialized with undefined, but let and const declarations remain uninitialized.
+//Compilation Phase: 
+During this phase, JavaScript's engine scans through your code, identifies variable and function declarations,
+ and allocates memory for them. This phase sets up the structure for the code execution.
 
- onsole.log(a);
-let a = 3;
-Output: ReferenceError: a is not defined
-//They will only get initialized when their lexical binding (assignment) is evaluated during runtime by the JavaScript 
-engine. This means you can’t access the variable before the engine evaluates its value at
- the place it was declared in the source code. This is what we call “Temporal Dead Zone”, A 
- time span between variable creation and its initialization where they can’t be accessed.
+//Execution Phase:
+ After the compilation phase, the code is executed line by line. This is when assignments, function calls, 
+ and other statements are executed.
 
-If the JavaScript engine still can’t find the value of let or const variables at the line where
-     they were declared, it will assign them the value of undefined or return an error (in case of const).
+ //Hoisting of Variables:
+In JavaScript, variable declarations are hoisted to the top of their containing scope during the compilation phase. 
+However, the actual assignments are not hoisted. This means you can use a variable before declaring it, but the value
+ will be undefined until it's assigned.
 
-Let’s look at some more example:
+ex:
+console.log(myVar); // Output: undefined
+var myVar = 42;
 
-let a;
-console.log(a); // outputs undefined
-a = 5;
+Hoisting of Function Declarations:
+Function declarations are also hoisted in their entirety. This means you can call a function before declaring it
+, and the function will still work.
+
+
+sayHello(); // Output: Hello!
+
+function sayHello() {
+  console.log("Hello!");
+}
+
+Hoisting of Function Expressions:
+Function expressions (where you assign a function to a variable) are not fully hoisted like function declarations. 
+Only the variable declaration is hoisted, not the function assignment.
+
+myFunc(); // Output: TypeError: myFunc is not a function
+
+var myFunc = function() {
+  console.log("Hello from myFunc!");
+};
